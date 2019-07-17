@@ -6,6 +6,8 @@ services:
     build: .
     container_name: go-hpa
     entrypoint: "/go/bin/go-hpa"
+    ports:
+      - 8000:8000
     # tty: true
     # environment:
     #     - GOPATH=/go/src/
