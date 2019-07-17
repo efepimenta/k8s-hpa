@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  go-hpa:
+    build: .
+    container_name: go-hpa
+    entrypoint: "/go/bin/go-hpa"
+    # tty: true
+    # environment:
+    #     - GOPATH=/go/src/
+    # volumes:
+#     - ./src:/go/
